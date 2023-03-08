@@ -44,19 +44,6 @@ describe("user Tests", () => {
 		var result = mathOperations.diff(10, 2)
 		expect(result).toBe(8);
 	});
-
-	// test("Multiplication of 2 numbers", () => {
-	// 	var result = mathOperations.product(2, 8)
-
-	// 	expect(result).toBe(16);
-	// });
-
-	// test("Division of 2 numbers", () => {
-	// 	var result = mathOperations.divide(24, 8)
-
-
-	// 	expect(result).toBe(3);
-	// });
 })
 
 function getRandomizer(bottom, top) {
