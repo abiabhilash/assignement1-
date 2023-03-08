@@ -1,10 +1,10 @@
 
-import  express,{ Request, Response } from 'express';
+const express = require( 'express');
 const bodyParser = require('body-parser');
 const app = express();
-const port : Number = parseInt(process.env.PORT as string,3000);
+const port = 3000;
 
-const db = require('./queries');
+const  db = require('./queries');
 
 app.use(bodyParser.json());
 app.use(
@@ -13,7 +13,7 @@ app.use(
 	})
 );
 
-app.get('/', (req : Request, res:Response) => {
+app.get('/', (req:any, res:any) => {
 	res.json({ info: 'Node.js, Express, and Postgres API' });
 });
 
