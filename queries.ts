@@ -74,7 +74,6 @@ const deleteUser = (request:Request, response:Response) => {
 	});
 };
 
-
 module.exports = {
 	getUsers,
 	getUserById,
